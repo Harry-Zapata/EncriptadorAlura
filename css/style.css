@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+body {
+    background-color: #f3f5fc;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+section {
+    height: 100%;
+}
+
+.main {
+    width: 70%;
+}
+
+.salida {
+    width: 25%;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.salida img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.salida div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.salida div p.esconder:nth-child(1) {
+    font-size: 24px;
+    font-weight: 700;
+    color: #343A40;
+    line-height: 120%;
+    text-align: center;
+}
+
+.salida div p.esconder:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    text-align: center;
+}
+
+button {
+    width: 45%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.salida div button {
+    color: #0A3871;
+    margin-top: 15px;
+}
+
+.main img {
+    position: absolute;
+    margin-left: 15px;
+}
+
+.main>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    padding: 120px 0 36px 0;
+    justify-content: space-between;
+}
+
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 200px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+    border-radius: 20px;
+}
+
+.btn-encriptar {
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+
+.main div div p {
+    color: #495057;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+.main>div>div>button {
+    margin: 0 1.5% 10px 1.5%;
+}
+
+.contenedorResultado {
+    width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#resultado {
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+#resultado {
+    align-items: flex-start;
+}
+
+#btn-Copiar {
+    width: 120%;
+}
+
+
+@media (max-width: 1000px) {
+    .salida img {
+        width: 140%;
+    }
+
+}
+
+@media (max-width: 770px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .main,
+    .salida {
+        width: 100%;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .main>div {
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+
+    .salida img {
+        display: none;
+    }
+
+    #btn-Copiar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        height: auto;
+        padding: 17px;
+        justify-content: start;
+    }
+
+    .main>div>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main>div>div button {
+        width: 100%;
+    }
+
+    .salida {
+        margin-bottom: 30px;
+    }
+}
